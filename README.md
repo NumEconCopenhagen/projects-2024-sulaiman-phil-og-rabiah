@@ -19,7 +19,7 @@ Se det her venner
 
 Hej
 
-
+Er du noob
 
 
 This repository contains  
