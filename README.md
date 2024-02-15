@@ -14,13 +14,14 @@ Når man laver ændringer skal man commit all og dernæst beskrive ændringerne 
 
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 
+hej 
+
 
 Se det her venner
-
-Hej
-
+hej hej 
 
 
+hej 
 
 This repository contains  
 1. Inaugural project. 
