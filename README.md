@@ -1,9 +1,9 @@
-# \[Group name\]
+# \[SRP\]
 
 **Group members:**
-- A
-- B
-- C
+- Sulaiman
+- Phil
+- Rabiah
 
 This repository contains  
 1. Inaugural project. 
