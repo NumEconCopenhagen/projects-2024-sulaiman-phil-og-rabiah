@@ -14,12 +14,13 @@ Når man laver ændringer skal man commit all og dernæst beskrive ændringerne 
 
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 
+hej 
+
 
 Se det her venner
+hej hej 
 
-Hej
 
-Er du noob
 
 
 This repository contains  
