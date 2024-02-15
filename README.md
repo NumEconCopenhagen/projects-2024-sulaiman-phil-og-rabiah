@@ -6,6 +6,7 @@
 - Rabiah
 Se den nye ændring
 Hej 
+Farvel
 
 
 This repository contains  
