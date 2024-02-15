@@ -14,6 +14,9 @@ Når man laver ændringer skal man commit all og dernæst beskrive ændringerne 
 
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 
+
+Se det her venner
+
 This repository contains  
 1. Inaugural project. 
 2. Data project. We fetch data from **source x** on **y** and show that ...
