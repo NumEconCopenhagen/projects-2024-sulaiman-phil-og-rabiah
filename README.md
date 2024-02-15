@@ -1,9 +1,9 @@
-# \[RPS\]
+# \[Group name\]
 
 **Group members:**
-- Rabiah
-- Phil
-- Sulaiman
+- A
+- B
+- C
 
 This repository contains  
 1. Inaugural project. 
