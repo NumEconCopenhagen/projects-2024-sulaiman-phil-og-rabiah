@@ -4,24 +4,6 @@
 - Sulaiman
 - Phil
 - Rabiah
-Se den nye ændring
-Hej 
-Farvel
-
-Når man laver ændringer skal man commit all og dernæst beskrive ændringerne og uploade til git sync
-
-
-
-HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-
-hej 
-
-
-Se det her venner
-hej hej 
-
-fredag
-
 
 This repository contains  
 1. Inaugural project. 
