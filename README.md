@@ -1,10 +1,10 @@
-# \[SRP\]
+# \[Sulaiman, Philippe og Rabiah\]
 
 **Group members:**
-- Sulaiman
+- Sulaiman 
 - Phil
 - Rabiah
-HEJ
+
 
 This repository contains  
 1. Inaugural project. 
