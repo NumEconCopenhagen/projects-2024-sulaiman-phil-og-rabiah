@@ -4,8 +4,7 @@
 - Sulaiman 
 - Phil
 - Rabiah
-- Ny ændring 
-- Hej
+
 
 This repository contains  
 1. Inaugural project. 
