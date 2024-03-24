@@ -1,9 +1,9 @@
 # \[Sulaiman, Philippe og Rabiah\]
 
 **Group members:**
-- Sulaiman 
-- Philippe
-- Rabiah
+- Sulaiman Malek (Zxc645)
+- Philippe Diallo (Bmq911)
+- Rabiah Zia Choudhary (Bst665)
 
 
 This repository contains  
