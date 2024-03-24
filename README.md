@@ -2,7 +2,7 @@
 
 **Group members:**
 - Sulaiman 
-- Phil
+- Philippe
 - Rabiah
 
 
