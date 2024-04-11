@@ -1,5 +1,6 @@
-# A1 - First data set
 
+
+# A1 - First data set
 # a. load
 nah1_api = DstApi('NAH1') 
 params = nah1_api._define_base_params(language='en')
@@ -29,3 +30,23 @@ nah1_true.groupby(['variable','unit']).describe()
 
 # f. Sort by year 
 nah1_true.sort_values(by='year',inplace=True)
+
+# Employment rate in different fields
+tabsum_kas= kas.tablesummary(language='en')
+display(tabsum_kas)
+for var in tabsum_kas['variable name']:
+    print(var+':')
+    display(kas.variable_levels(var, language='en'))
+
+
+#Defining parameters
+params= {'table': 'kas301',
+ 'format': 'BULK',
+ 'lang': 'en',
+ 'variables': [{'code': 'OMRÅDE', 'values': ['000']},
+  {'code': 'BRANCHE07', 'values': ['A', 'H', 'L', 'K', 'CF']},
+  {'code': 'SOCIO', 'values': ['02']},
+  {'code': 'ALDER', 'values': ['*']},
+  {'code': 'KOEN', 'values': ['TOT', 'K', 'M']},
+  {'code': 'PERIODE', 'values': ['1']},
+  {'code': 'Tid', 'values': ['>2011']}]}
