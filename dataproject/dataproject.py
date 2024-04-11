@@ -1,4 +1,30 @@
+from dstapi import DstApi # install with `pip install git+https://github.com/alemartinello/dstapi`
 
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import ipywidgets as widgets
+from matplotlib_venn import venn2
+import datetime
+import pandas_datareader # install with `pip install pandas-datareader`
+
+
+# autoreload modules when code is run
+%load_ext autoreload
+%autoreload 2
+
+# user written modules
+import dataproject as dp
+
+#If you dont have the content below, remove the hashtag and install them
+
+ pip install pandas-datareader
+ %pip install git+https://github.com/alemartinello/dstapi
+ %pip install pandas-datareader
+
+plt.rcParams.update({"axes.grid":True,"grid.color":"black","grid.alpha":"0.25","grid.linestyle":"--"})
+plt.rcParams.update({'font.size': 14})
 
 # A1 - First data set
 # a. load
