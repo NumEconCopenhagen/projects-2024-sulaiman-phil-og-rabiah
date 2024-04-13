@@ -9,22 +9,7 @@ from matplotlib_venn import venn2
 import datetime
 import pandas_datareader # install with `pip install pandas-datareader`
 
-
-# autoreload modules when code is run
-%load_ext autoreload
-%autoreload 2
-
-# user written modules
-import dataproject as dp
-
 #If you dont have the content below, remove the hashtag and install them
-
- pip install pandas-datareader
- %pip install git+https://github.com/alemartinello/dstapi
- %pip install pandas-datareader
-
-plt.rcParams.update({"axes.grid":True,"grid.color":"black","grid.alpha":"0.25","grid.linestyle":"--"})
-plt.rcParams.update({'font.size': 14})
 
 # PRIS111 - First data set
 # a. load
@@ -59,38 +44,3 @@ plt.rcParams.update({'font.size': 14})
 
 # f. Sort by year 
 #PRIS111_true.sort_values(by='year',inplace=True)
-
-
-FT_api = DstApi('AULP01')
-params = FT_api._define_base_params(language='en')
-params['variables'][0]['values'] = ['000']
-params['variables'][1]['values'] = ['TOT']
-params['variables'][2]['values'] = ['TOT']
-params['variables'][3]['values'] = ['2007','2008','2009','2010','2011','2012','2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022']
-## 000 is the code for all of Denmark, this can be seen by using: FT_api.variable_levels('HOVEDDELE', language='en')
-unemp = FT_api.get_data(params=params)
-
-unemp.rename(columns={'TID':'year','INDHOLD':'unemployment'},inplace=True)
-unemp =  unemp.loc[:,['year','unemployment']]
-
-
-
-# Employment rate in different fields
-tabsum_kas= kas.tablesummary(language='en')
-display(tabsum_kas)
-for var in tabsum_kas['variable name']:
-    print(var+':')
-    display(kas.variable_levels(var, language='en'))
-
-
-#Defining parameters
-params= {'table': 'kas301',
- 'format': 'BULK',
- 'lang': 'en',
- 'variables': [{'code': 'OMRÅDE', 'values': ['000']},
-  {'code': 'BRANCHE07', 'values': ['A', 'H', 'L', 'K', 'CF']},
-  {'code': 'SOCIO', 'values': ['02']},
-  {'code': 'ALDER', 'values': ['*']},
-  {'code': 'KOEN', 'values': ['TOT', 'K', 'M']},
-  {'code': 'PERIODE', 'values': ['1']},
-  {'code': 'Tid', 'values': ['>2011']}]}
