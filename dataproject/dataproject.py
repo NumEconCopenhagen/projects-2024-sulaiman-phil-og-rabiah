@@ -28,34 +28,52 @@ plt.rcParams.update({'font.size': 14})
 
 # PRIS111 - First data set
 # a. load
-PRIS111_api = DstApi('PRIS111') 
-params = PRIS111_api._define_base_params(language='en')
-PRIS111_true = PRIS111_api.get_data(params=params)
+# PRIS111_api = DstApi('PRIS111') 
+# params = PRIS111_api._define_base_params(language='en')
+# PRIS111_true = PRIS111_api.get_data(params=params)
+
+
+
 
 # b. rename and replace
-PRIS111_true.rename(columns=columns_dict,inplace=True)
+# PRIS111_true.rename(columns=columns_dict,inplace=True)
 
 # c. replace data
-for key,value in var_dict.items():
-   PRIS111_true.variable.replace(key,value,inplace=True)
+# for key,value in var_dict.items():
+   #PRIS111_true.variable.replace(key,value,inplace=True)
 
-for key,value in unit_dict.items():
-   PRIS111_true.unit.replace(key,value,inplace=True)
+#for key,value in unit_dict.items():
+   #PRIS111_true.unit.replace(key,value,inplace=True)
 
 # d. keep if in var_dict
-I = False
-for key,value in var_dict.items():
-    I = I | (PRIS111_true.variable == value)
-PRIS111_true = PRIS111_true[I]
+#I = False
+#for key,value in var_dict.items():
+    #I = I | (PRIS111_true.variable == value)
+#PRIS111_true = PRIS111_true[I]
    
 # e. convert values to numeric
-PRIS111_true.value = PRIS111_true.value.astype('float')
+#PRIS111_true.value = PRIS111_true.value.astype('float')
 
 # d. summary statistics
-PRIS111_true.groupby(['variable','unit']).describe()
+#PRIS111_true.groupby(['variable','unit']).describe()
 
 # f. Sort by year 
-PRIS111_true.sort_values(by='year',inplace=True)
+#PRIS111_true.sort_values(by='year',inplace=True)
+
+
+FT_api = DstApi('AULP01')
+params = FT_api._define_base_params(language='en')
+params['variables'][0]['values'] = ['000']
+params['variables'][1]['values'] = ['TOT']
+params['variables'][2]['values'] = ['TOT']
+params['variables'][3]['values'] = ['2007','2008','2009','2010','2011','2012','2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022']
+## 000 is the code for all of Denmark, this can be seen by using: FT_api.variable_levels('HOVEDDELE', language='en')
+unemp = FT_api.get_data(params=params)
+
+unemp.rename(columns={'TID':'year','INDHOLD':'unemployment'},inplace=True)
+unemp =  unemp.loc[:,['year','unemployment']]
+
+
 
 # Employment rate in different fields
 tabsum_kas= kas.tablesummary(language='en')
