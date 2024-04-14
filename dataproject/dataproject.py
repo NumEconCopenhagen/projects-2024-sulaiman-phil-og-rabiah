@@ -17,9 +17,6 @@ import pandas_datareader # install with `pip install pandas-datareader`
 # params = PRIS111_api._define_base_params(language='en')
 # PRIS111_true = PRIS111_api.get_data(params=params)
 
-
-
-
 # b. rename and replace
 # PRIS111_true.rename(columns=columns_dict,inplace=True)
 
