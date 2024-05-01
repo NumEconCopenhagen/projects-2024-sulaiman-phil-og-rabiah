@@ -14,3 +14,5 @@ We apply the **following datasets**:
 
 ``pip install matplotlib-venn``
 ``dstApi``
+``import plotly.graph_objects as go``
+
