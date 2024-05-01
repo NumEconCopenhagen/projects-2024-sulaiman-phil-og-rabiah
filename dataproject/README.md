@@ -13,6 +13,7 @@ We apply the **following datasets**:
 **Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations:
 
 ``pip install matplotlib-venn``
-``dstApi``
+`` from dstapi import DstApi # install with `pip install git+https://github.com/alemartinello/dstapi``
 ``import plotly.graph_objects as go``
-
+``from ipywidgets import widgets, Output``
+``from IPython.display import display``
