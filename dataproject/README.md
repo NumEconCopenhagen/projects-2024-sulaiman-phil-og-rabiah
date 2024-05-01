@@ -17,6 +17,4 @@ We apply the **following datasets**:
 ``import plotly.graph_objects as go``
 ``from ipywidgets import widgets, Output``
 ``from IPython.display import display``
-``pip install pandas-datareader``
-``%pip install git+https://github.com/alemartinello/dstapi``
 ``%pip install pandas-datareader``
