@@ -41,3 +41,4 @@ import pandas_datareader # install with `pip install pandas-datareader`
 
 # f. Sort by year 
 #PRIS111_true.sort_values(by='year',inplace=True)
+## 000 is the code for all of Denmark, this can be seen by using: FT_api.variable_levels('HOVEDDELE', language='en')
