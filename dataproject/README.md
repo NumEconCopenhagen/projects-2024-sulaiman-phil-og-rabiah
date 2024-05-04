@@ -8,13 +8,9 @@ We apply the **following datasets**:
 
 1. AULP01.csv 
 2. PRIS111.csv 
-3. KAS301.csv
+3. GDP new1.csv
 
 **Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations:
 
-``pip install matplotlib-venn``
 `` from dstapi import DstApi # install with `pip install git+https://github.com/alemartinello/dstapi``
-``import plotly.graph_objects as go``
-``from ipywidgets import widgets, Output``
-``from IPython.display import display``
 ``%pip install pandas-datareader``
