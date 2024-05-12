@@ -49,7 +49,7 @@ def plot_graph(x, y, title='title', xlabel='xlabel', ylabel='ylabel', label_a='l
     plt.grid(True)
     plt.show()
 
-def plot_graph_2(x1,x2, y1,y2, title='title', xlabel='xlabel', ylabel='ylabel', label_a='label_a', label_b='label_b'):
+def plot_graph_2(x1,x2, y1,y2, title='title', xlabel='xlabel', ylabel='Percentage', label_a='label_a', label_b='label_b'):
     """ docstrings """
     plt.figure(figsize=(12, 8))
     plt.plot(x1, y1, marker='o', linestyle='-', color='blue', label=label_a)
@@ -60,3 +60,27 @@ def plot_graph_2(x1,x2, y1,y2, title='title', xlabel='xlabel', ylabel='ylabel', 
     plt.legend()
     plt.grid(True)
     plt.show()
+
+import plotly.express as px
+
+def plot_graph_3(df):
+    """Function to plot an interactive line plot showing Real GDP over the years.
+    
+    Args:
+        df (DataFrame): DataFrame that contains 'Year' and 'Real GDP' columns.
+    """
+    # Ensure 'Year' is an integer if not already converted
+    df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
+    df['Real GDP'] = pd.to_numeric(df['Real GDP'], errors='coerce')
+
+    # Create an interactive line plot
+    fig = px.line(df, x='Year', y='Real GDP', title='Real GDP Over Years',
+                  labels={'Real GDP': 'Real GDP Value (Billion DKK)'},
+                  hover_data={'Year': True, 'Real GDP': ':.2f'})
+    
+    # Improve hover template to show year and GDP with formatting
+    fig.update_traces(hovertemplate='Year: %{x}<br>Real GDP: %{y:.2f}')
+    
+    # Show the figure
+    fig.show()
+
