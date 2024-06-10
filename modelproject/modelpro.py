@@ -65,7 +65,9 @@ class malthus_economics:
         return self.A * (1 + self.g)
 
     def steady_state(self):
+        #To ensure precision, tolerance is set to x
         tolerance = 1e-8
+        #we use 1000 interations
         max_iter = 1000
         n_optimal = 1
         population = [self.L]
