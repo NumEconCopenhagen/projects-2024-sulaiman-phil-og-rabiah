@@ -4,6 +4,6 @@ Welcome to our first Inaugural Project in Python by Sulaiman (Zxc645), Philippe 
 
 This project investigates an exchange economy with two consumers A and B and two goods x1 and x2. Given utility functions for both consumers and initial endowments of each good, the model generates various allocations of goods and utility for each consumer by applying different optimization constraints. These allocations are then visualized within an Edgeworth box. 
 
-The **results** of the project can be seen from running [InauguralProject2024-nyeste-version.ipynb](InauguralProject2024-nyeste-version.ipynb).
+The **results** of the project can be seen from running [InauguralProject2024_rabiah_philippe_sulaiman.ipynb](InauguralProject2024_rabiah_philippe_sulaiman.ipynb).
 
 **Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires no further packages.
