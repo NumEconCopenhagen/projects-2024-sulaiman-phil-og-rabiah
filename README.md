@@ -6,7 +6,7 @@
 - Rabiah Zia Choudhary (Bst665)
 
 
-This repository contains the following projects: 
+This folder contains the following projects: 
 1. Inaugural project 2024. 
 2. Data project: Inflation, Unemploymet and Real GDP.
 3. Model project: Malthus Economy. 
